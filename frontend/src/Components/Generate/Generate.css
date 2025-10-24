@@ -1,0 +1,181 @@
+.enigme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient( #213b6c, #2a5298, #b3d0ec);
+  min-height: 100vh;
+}
+
+
+.generation {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  width: 600px;
+  text-align: center;
+}
+
+.generation strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2d2d2d;
+}
+
+.generation select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  outline: none;
+}
+.generation option{
+  border: none;
+  outline: none;
+  background-color: #213b6c;
+  color: aliceblue;
+}
+
+
+.generation button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a5298;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.generation strong {
+  color: #213b6c;
+}
+.generation button:hover {
+  background-color: #574fd6;
+}
+
+.riddle-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.riddle-box h3 {
+  font-size: 1.5rem;
+  color: #213b6c;
+  margin-bottom: 15px;
+}
+
+.riddle-box p {
+  font-size: 1.1rem;
+  color: #213b6c;
+  margin-bottom: 20px;
+}
+
+.answer-input {
+  width: 78%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #213b6c;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.check-btn,
+.reveal-button,
+.reset-button {
+  width: 150px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+.check-btn { background-color: #4caf50; }
+.check-btn:hover { background-color: #3e8e41; }
+
+.reveal-button { background-color: #2196f3; }
+.reveal-button:hover { background-color: #1976d2; }
+
+.reset-button { background-color: #f44336; }
+.reset-button:hover { background-color: #d32f2f; }
+
+.answer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: aliceblue;
+  background: #1976d2;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 75%;
+  margin-left: 67px;
+}
+
+.popup {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  .generation {
+    width: 300px;
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .riddle-box {
+    width: 300px;
+    padding: 20px;
+    margin-top: 30px;
+  }
+
+  .answer-input {
+    width: 279px;
+  }
+
+  .check-btn,
+  .reveal-button,
+  .reset-button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .answer {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .popup,
+  .error {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .enigme-container {
+    padding: 30px 10px;
+  }
+}
+
+
